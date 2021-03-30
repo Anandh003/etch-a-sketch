@@ -1,0 +1,29 @@
+:root {
+  --number-of-rows: 16;
+  --number-of-columns: 16;
+  --size: 50px;
+}
+
+#square-container {
+  width: calc(var(--size) * var(--number-of-columns));
+  height: calc(var(--size) * var(--number-of-rows)) +
+    calc(var("--number-of-rows") + "px");
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+#main-container {
+  margin: auto;
+}
+
+.cell {
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid black;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
